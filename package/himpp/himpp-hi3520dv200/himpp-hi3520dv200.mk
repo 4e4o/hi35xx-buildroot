@@ -21,7 +21,7 @@ HIMPP_HI3520DV200_MAKE_OPTS += LINUX_ROOT=$(LINUX_DIR)
 
 define HIMPP_HI3520DV200_EXTRACT_CMDS
 	mkdir -p $(@D)
-	$(TAR) -zxf $(DL_DIR)/$(HIMPP_HI3520DV200_SOURCE) \
+	$(TAR) -zxf $(DL_DIR)/himpp-hi3520dv200/$(HIMPP_HI3520DV200_SOURCE) \
 		--strip-components=2 -C $(@D)
 endef
 

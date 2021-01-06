@@ -538,7 +538,7 @@ HI_U32 inline HAL_GetXDC_BUMA(HI_S32 s32Value)
     }
 }
 
-HI_U32 inline HAL_Conver_CscCoef(HI_S32 s32Value)
+static HI_U32 inline HAL_Conver_CscCoef(HI_S32 s32Value)
 {
     HI_S32 s32Result = ((s32Value << 8) / 1000);
 
